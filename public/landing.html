@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Tooney Tunes</title>
+
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .game-container {
+            max-width: 800px;
+        }
+        .btn-play {
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            border-radius: 30px; 
+            font-size: 1.5rem;
+            padding: 12px 35px;
+            transition: all 0.3s ease;
+        }
+
+        
+        .btn-play:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid black;
+            transform: scale(1.05);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        .game-description {
+            margin: 20px 0;
+            font-size: 1.5rem; 
+            font-weight: bold;
+            color: black;
+            font-family: 'Pacifico', cursive; 
+            letter-spacing: 1px; 
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <!-- Dino Image -->
+        <img src="/assets/images/landing-page2.png" class="img-fluid" alt="Tooney Tunes">
+        
+        <div class="game-description">
+            Are you ready to test your reflexes? <br>
+            Hit "Play Now" and find out!
+        </div>
+        
+        <!-- Play Button -->
+        <form action="/authenticate" method="GET">
+            <button class="btn btn-play" type="submit">PLAY NOW</button>
+        </form>
+    </div>
+</body>
+</html>
